@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@import "./styles/modern-antiquity.css";
+
+:root {
+  --bg-primary: #FDFBF7;
+  --bg-surface: #F6F2EA;
+  --bg-elevated: #EFE9DD;
+  --border-subtle: #D4C9B8;
+  --text-primary: #1A1815;
+  --text-secondary: #665C52;
+  --text-muted: #968A7C;
+  --accent-gold: #C59B27;
+  --accent-gold-hover: #B8941F;
+  --accent-wine: #7A2E2E;
+  --accent-sage: #5B7566;
+  --font-serif: 'Newsreader', Georgia, serif;
+  --font-heading: 'Cinzel', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.dark {
+  --bg-primary: #161412;
+  --bg-surface: #1E1B18;
+  --bg-elevated: #27231F;
+  --border-subtle: #3A342E;
+  --text-primary: #F5F0E8;
+  --text-secondary: #B0A699;
+  --text-muted: #70665B;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.scripture-link {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--accent-gold);
+  border-bottom: 1px dashed var(--accent-gold);
+  padding-bottom: 1px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.scripture-link:hover {
+  background-color: rgba(197, 155, 39, 0.1);
+  border-bottom-style: solid;
+}
